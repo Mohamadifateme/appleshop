@@ -1,17 +1,20 @@
 import React from 'react';
-import './menu.style.scss';
-
+import './header.style.scss';
+import { FaShoppingBag } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 
 const Menu = ()=>{
     return(
         <div className='menu'>
 <ul>
-    <li><a href='#home'>خانه</a></li>
-     <li><a href='#shop'>فروشگاه</a></li>
-     <li><a href='#Gallery'>گالری</a></li>
-      <li><a href='#About'>درباره ما</a></li>
-        <li><a href='#contact'>تماس با ما</a></li>
-</ul>
+    <li><NavLink to="/">خانه</NavLink></li>
+     <li><NavLink to="/shop">فروشگاه</NavLink></li>
+      <li><NavLink to="/gallery">گالری</NavLink></li>
+        <li><NavLink to="/about">درباره ما</NavLink></li>
+                <li><NavLink to="/contact">تماس با ما</NavLink></li>
+
+        <FaShoppingBag className='basketIcon'/>
+        </ul>
         </div>
     );
 }
