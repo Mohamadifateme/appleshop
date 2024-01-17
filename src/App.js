@@ -7,15 +7,17 @@ import {Contact} from './pages/contact/contact.component.jsx';
 import {About} from './pages/about/about.component.jsx';
 import {BrowserRouter,Route,Routes} from  'react-router-dom';
 import{Header} from './components/header/header.component.jsx';
+import {BasketProvider} from './provider/basketProvider/basketProvider.component.jsx';
 
-import { SlideShow } from './components/slideShow/slideShow.component';
-import { ProductView } from './components/productView/productView.component';
+
 function App() {
   return (
     
 
     <BrowserRouter basename="/">
+      <BasketProvider>
       <Header />
+      
       <Routes>
         <Route  exact path="/" element={<Home/>}/>
               <Route path="/shop" element={<Shop/>}/>
@@ -25,8 +27,11 @@ function App() {
         <Route path="/gallery" element={<Gallery/>}/>
 
       </Routes>
+      </BasketProvider>
     </BrowserRouter>
+  
   );
+  
   }
 
 export default App;

@@ -1,21 +1,29 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './header.style.scss';
-import { FaShoppingBag } from "react-icons/fa";
+import { HiOutlineShoppingCart } from "react-icons/hi2";
 import { NavLink } from 'react-router-dom';
+import { Basket } from './basket.component';
 
-const Menu = ()=>{
+const Menu = () => {
+    const [basketView,setBasketView] = useState(false);
+
+    const showBasket = () => {
+        setBasketView(!basketView);
+    }
+
     return(
         <div className='menu'>
-<ul>
-    <li><NavLink to="/">خانه</NavLink></li>
-     <li><NavLink to="/shop">فروشگاه</NavLink></li>
-      <li><NavLink to="/gallery">گالری</NavLink></li>
-        <li><NavLink to="/about">درباره ما</NavLink></li>
-                <li><NavLink to="/contact">تماس با ما</NavLink></li>
-
-        <FaShoppingBag className='basketIcon'/>
-        </ul>
+            <ul>
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/shop">Shop</NavLink></li>
+                <li><NavLink to="/about">About</NavLink></li>
+                <li><NavLink to="/contact">Contact</NavLink></li>
+                <li><NavLink to="/galley">Gallery</NavLink></li>
+                <HiOutlineShoppingCart className='basketIcon' onClick={showBasket} />
+                <Basket basketView={basketView}  />
+            </ul>
         </div>
     );
 }
-export {Menu};
+
+export {Menu}

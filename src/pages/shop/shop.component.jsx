@@ -7,6 +7,17 @@ import { ProductView } from '../../components/productView/productView.component'
 
 
 const Shop=() => {
+
+    const stock=[
+    {
+     
+        id:'12cvbghcudhuh8585kj',
+         qty:1000,
+         buyQty:100,
+    }
+    ]
+
+
     const products=[
         {
             id:'12cvbghcudhuh8585kj',
@@ -23,6 +34,8 @@ const Shop=() => {
             discount:'10',
             group:'clothes',
             subGroup:'shoes',
+            quantity:1000,
+            purchasedQty:0,
         },
         {
             id:'11cvjjcudhuh85h5kj',
@@ -39,6 +52,8 @@ const Shop=() => {
             discount:'0',
             group:'clothes',
             subGroup:'shoes',
+            quantity:1000,
+            purchasedQty:0,
         },
         {
             id:'15cvhjhhdhuh545kj',
@@ -54,6 +69,8 @@ const Shop=() => {
             discount:'15',
             group:'clothes',
             subGroup:'shirts',
+            quantity:1000,
+            purchasedQty:0,
         },
         {
             id:'156cvbghchh8585kj',
@@ -70,6 +87,8 @@ const Shop=() => {
             discount:'0',
             group:'clothes',
             subGroup:'shirts',
+            quantity:1000,
+            purchasedQty:0,
         },
         {
             id:'19cvbhjjhuh585kj',
@@ -86,6 +105,8 @@ const Shop=() => {
             discount:'20',
             group:'clothes',
             subGroup:'jean',
+            quantity:1000,
+            purchasedQty:0,
         },
         {
             id:'168vbgg98kj',
@@ -102,6 +123,8 @@ const Shop=() => {
             discount:'15',
             group:'clothes',
             subGroup:'jean',
+            quantity:1000,
+            purchasedQty:0,
         },
     ];
     const {productId} = useParams();

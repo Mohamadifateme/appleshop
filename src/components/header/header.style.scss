@@ -2,12 +2,49 @@
 $blue:#24b1d4;
 @import '../../App.scss';
 .header{
+   position: relative;
+   padding: 20px 10px;
+   box-sizing: border-box;
 
+   .basketContainer{
+      position: absolute;
+      top:70px;
+      right: 0;
+      width: 0px;
+      height: auto;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+      flex-direction: column;
+      overflow: hidden;
+      opacity: 0.9;
+      box-sizing: 0 1px 3px #444;
+      min-height: 200px;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   }
+
+.logo{
+   h1{
+      font-size: 36px;
+      font-family: cursive;
+      background: -webkit-linear-gradient(#34248e,rgb(233,89,233));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-right: 1px solid rgb(255,0,255);
+      border-bottom: 3px solid rgb(132,28,56);
+      padding: 10px;
+      padding-top: 0;
+      box-sizing: border-box;
+   }  
+}
+   
    .menu{
       // background-color: $blue;
-      position: relative;
+      // position: relative;
   width: 100%;
-  
+    
   
    ul{
    list-style-type: none;

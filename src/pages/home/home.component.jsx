@@ -22,6 +22,8 @@ const Home=() => {
             discount:'10',
             group:'clothes',
             subGroup:'shoes',
+            quantity:1000,
+            purchasedQty:0,
         },
         {
             id:'11cvjjcudhuh85h5kj',
@@ -38,7 +40,9 @@ const Home=() => {
             discount:'0',
             group:'clothes',
             subGroup:'shoes',
-        },
+            quantity:1000,
+            purchasedQty:0,
+              },
         {
             id:'15cvhjhhdhuh545kj',
             title:'تیشرت ترک',
@@ -53,6 +57,9 @@ const Home=() => {
             discount:'15',
             group:'clothes',
             subGroup:'shirts',
+            quantity:1000,
+            purchasedQty:0,
+
         },
         {
             id:'156cvbghchh8585kj',
@@ -69,6 +76,9 @@ const Home=() => {
             discount:'0',
             group:'clothes',
             subGroup:'shirts',
+            quantity:1000,
+            purchasedQty:0,
+
         },
         {
             id:'19cvbhjjhuh585kj',
@@ -85,6 +95,9 @@ const Home=() => {
             discount:'20',
             group:'clothes',
             subGroup:'jean',
+            quantity:1000,
+            purchasedQty:0,
+
         },
         {
             id:'168vbgg98kj',
@@ -101,6 +114,9 @@ const Home=() => {
             discount:'15',
             group:'clothes',
             subGroup:'jean',
+            quantity:1000,
+            purchasedQty:0,
+
         },
     ];
     const newProducts=[
@@ -119,6 +135,9 @@ const Home=() => {
             discount:'10',
             group:'clothes',
             subGroup:'shoes',
+            quantity:1000,
+            purchasedQty:0,
+
         },
         {
             id:'11cvjjcudhuh85h5kj',
@@ -135,6 +154,9 @@ const Home=() => {
             discount:'0',
             group:'clothes',
             subGroup:'shoes',
+            quantity:1000,
+            purchasedQty:0,
+
         },
         {
             id:'15cvhjhhdhuh545kj',
@@ -150,6 +172,9 @@ const Home=() => {
             discount:'15',
             group:'clothes',
             subGroup:'shirts',
+            quantity:1000,
+            purchasedQty:0,
+
         },
         {
             id:'156cvbghchh8585kj',
@@ -166,6 +191,8 @@ const Home=() => {
             discount:'0',
             group:'clothes',
             subGroup:'shirts',
+            quantity:1000,
+            purchasedQty:0,
         },
         {
             id:'19cvbhjjhuh585kj',
@@ -182,6 +209,9 @@ const Home=() => {
             discount:'20',
             group:'clothes',
             subGroup:'jean',
+            quantity:1000,
+            purchasedQty:0,
+
         },
         {
             id:'168vbgg98kj',
@@ -198,6 +228,9 @@ const Home=() => {
             discount:'15',
             group:'clothes',
             subGroup:'jean',
+            quantity:1000,
+            purchasedQty:0,
+
         },
     ]
          const sallerProducts=[
@@ -216,6 +249,9 @@ const Home=() => {
                 discount:'10',
                 group:'clothes',
                 subGroup:'shoes',
+                quantity:1000,
+                purchasedQty:0,
+
             },
             {
                 id:'11cvjjcudhuh85h5kj',
@@ -232,6 +268,9 @@ const Home=() => {
                 discount:'0',
                 group:'clothes',
                 subGroup:'shoes',
+                quantity:1000,
+                purchasedQty:0,
+
             },
             {
                 id:'15cvhjhhdhuh545kj',
@@ -247,6 +286,9 @@ const Home=() => {
                 discount:'15',
                 group:'clothes',
                 subGroup:'shirts',
+                quantity:1000,
+                purchasedQty:0,
+
             },
             {
                 id:'156cvbghchh8585kj',
@@ -263,6 +305,9 @@ const Home=() => {
                 discount:'0',
                 group:'clothes',
                 subGroup:'shirts',
+                quantity:1000,
+                purchasedQty:0,
+
             },
             {
                 id:'19cvbhjjhuh585kj',
@@ -279,6 +324,9 @@ const Home=() => {
                 discount:'20',
                 group:'clothes',
                 subGroup:'jean',
+                quantity:1000,
+                purchasedQty:0,
+
             },
             {
                 id:'168vbgg98kj',
@@ -295,6 +343,9 @@ const Home=() => {
                 discount:'15',
                 group:'clothes',
                 subGroup:'jean',
+                quantity:1000,
+                purchasedQty:0,
+
             },
         
          ];
