@@ -2,8 +2,7 @@ import React,{useState} from 'react';
 import './productView.style.scss';
 import { Grid,Typography, Button } from '@mui/material';
 import { FaCartPlus } from "react-icons/fa";
-import { useBasket } from '././provider/basketProvider/basketProvider.jsx';
-
+import { useBasket } from '../../provider/basketProvider/basketProvider';
 
 const ProductView = ({product}) => {
 
